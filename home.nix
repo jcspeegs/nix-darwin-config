@@ -5,11 +5,6 @@
     EDITOR = "vim";
   };
 
-  programs.fish = {
-    enable = true;
-    interactiveShellInit = ( builtins.readFile packages/fish/config.fish );
-  };
-
   programs.git = {
     enable = true;
     userName = "ugflows";
