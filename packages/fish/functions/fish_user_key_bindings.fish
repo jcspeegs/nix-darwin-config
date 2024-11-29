@@ -1,9 +1,9 @@
 function fish_user_key_bindings --description "Set key bindings"
     # ctrl-p pianobar
-    bind \cp "guake --show -e 'tmux-sessionizer pianobar pianobar'"
+    # bind \cp "guake --show -e 'tmux-sessionizer pianobar pianobar'"
 
     # ctrl-f tmux session
-    bind \cf "tmux-sessionizer"
+    # bind \cf "tmux-sessionizer 'fd -HLt d -d 3 . ~ | fzf' 'fish -l'"
 
     # fzf
     # https://nixos.wiki/wiki/Fzf
