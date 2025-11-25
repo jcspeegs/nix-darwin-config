@@ -15,6 +15,16 @@ if status is-interactive
         --preview-window="hidden:wrap"
     '
 
+    abbr -a ls eza --icons=always --git
+    abbr -a k kubectl
+    abbr -a h history
+    abbr -a gs git status
+    abbr -a ga git add
+    abbr -a gc git commit
+    abbr -a gco git checkout
+    abbr -a t tmux new -As
+    abbr -a tls tmux ls
+
     # Starship
     starship init fish | source
 end
