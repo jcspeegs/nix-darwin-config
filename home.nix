@@ -7,10 +7,12 @@
 
   programs.git = {
     enable = true;
-    userName = "ugflows";
-    userEmail = "justin@speegs.com";
     ignores = lib.splitString "\n" (builtins.readFile packages/gitignore);
-    extraConfig = {
+    settings = {
+      user = {
+        name = "ugflows";
+        email = "justin@speegs.com";
+      };
       init = { defaultBranch = "main"; };
     };
   };

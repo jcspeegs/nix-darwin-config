@@ -1,6 +1,14 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    glow
+    gh
+    claude-code
+    devenv
+    yamllint
+    fd
+    ripgrep   
     bat
+    bat-extras.core
     eza
     fd
     ripgrep
@@ -10,6 +18,8 @@
     kubernetes-helm
     kubeseal
     fzf
+    tailscale
+    pam-reattach
   ];
 
   # fonts.packages = with pkgs; [
