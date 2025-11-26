@@ -1,8 +1,9 @@
 # fish abbreviations
 # https://fishshell.com/docs/current/cmds/abbr.html
 {
-  # ls
-  ll = "ls -lrtha";
+  ls = "eza --icons=always --git";
+  # ll = "ls -lrtha";
+  ll = "eza -la --icons --git --header";
 
   h = "history";
 
@@ -11,7 +12,6 @@
 
   # git
   gs = "git status";
-  ga = "git add";
   gc = "git commit";
   gco = "git checkout";
 
