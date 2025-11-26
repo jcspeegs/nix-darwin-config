@@ -17,7 +17,8 @@
   programs.fish = {
     enable = true;
     interactiveShellInit = ( builtins.readFile ./config.fish );
-    shellAliases = import ./abbr.nix;
+    # shellAliases = import ./abbr.nix;
+    shellAbbrs = import ./abbr.nix;
   };
 
 }
